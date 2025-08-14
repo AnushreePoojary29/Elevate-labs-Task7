@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API - User Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Users List</h1>
+
+        <div class="controls">
+            <input type="text" id="searchBox" placeholder="Search by name or email...">
+            <select id="sortSelect">
+                <option value="">Sort by name</option>
+                <option value="asc">A → Z</option>
+                <option value="desc">Z → A</option>
+            </select>
+            <button id="reloadBtn">Reload Data</button>
+        </div>
+
+        <div id="userContainer" class="user-container"></div>
+    </div>
+
+    <!-- Modal -->
+    <div id="userModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <h2 id="modalName"></h2>
+            <p id="modalEmail"></p>
+            <p id="modalPhone"></p>
+            <p id="modalWebsite"></p>
+            <p id="modalCompany"></p>
+            <p id="modalAddress"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
